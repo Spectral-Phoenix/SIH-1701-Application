@@ -10,13 +10,13 @@ import io  # Import the io module
 import cohere
 
 # Set your Cerebras API key
-os.environ["CEREBRAS_API_KEY"] = "csk-4w6rw2kxyk2k3phf35d4pp2x552yvrnx85rtwmkh3c8th5kx"  # Replace with your actual key
+os.environ["CEREBRAS_API_KEY"]
 client = openai.OpenAI(
     base_url="https://api.cerebras.ai/v1",
     api_key=os.environ.get("CEREBRAS_API_KEY")
 )
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY","AIzaSyCVamDnNAeezeywfPTet9t_Fvd_DTTIuu0"))
-co = cohere.Client('QNug1dWb6KLsMJxuB3xZ40l6EdyCpGur1iz1mJON')
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+co = cohere.Client(COHERE_API_KEY=os.environ.get("COHERE_API_KEY"))
 
 st.title("Insight AI")
 
