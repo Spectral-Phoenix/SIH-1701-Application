@@ -3,3 +3,4 @@ google-generativeai
 cohere
 pypdf2
 duckduckgo_search
+distutils
